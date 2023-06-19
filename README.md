@@ -5,7 +5,7 @@
 
 ![Fig2ab](https://github.com/nvladimus/lens-testing/assets/10835134/e32449eb-aa6c-4746-9a61-5c6e64b18c4b)
 
-We are interested in field flatness, image contrast, and vignetting at the image corners, especially for CMOS camers with relatively large sensors (25 mm and higher), so that we can select the most sutable long-WD air objectives for light-sheet microscopes.
+We are interested in field flatness, image contrast, and vignetting at the image corners, especially for CMOS camers with relatively large sensors (25 mm and higher), so that we can select the most suitable long-WD air objectives for our custom-built light-sheet microscopes.
 
  Objectives tested in this repository:
 - PlatinumTL™ 0.9x Telecentric Lens
@@ -24,5 +24,7 @@ We are interested in field flatness, image contrast, and vignetting at the image
 - Thorlabs Super Apochromatic 2x/0.1 TL2X-SAP
 - Thorlabs Super Apochromatic 4x/0.2 TL2X-SAP
 - Olympus XLFluor 4x/0.28
+
+See [Wiki](https://github.com/nvladimus/lens-testing/wiki) for summary plots of various objectives.
 
 The method of contrast mapping was developed by [N.Vladimirov](https://github.com/nvladimus) as a part of the [Benchtop mesoSPIM](https://github.com/mesoSPIM/benchtop-hardware) project.

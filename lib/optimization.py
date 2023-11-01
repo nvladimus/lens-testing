@@ -56,6 +56,9 @@ def _parabola_1d(x_arr, xcenter, amplitude=1, offset=0):
     g = offset - amplitude * (x_arr - float(xcenter)) ** 2
     return g.ravel()
 
+def _linear(x_arr, a, b):
+    return a * x_arr + b
+
 def sigma2fwhm(sigma):
     """Convert gaussian std (sigma) to full-width half-maximum (FWHM)"""
     return 2.0 * sigma * np.sqrt(2 * np.log(2))
@@ -137,3 +140,9 @@ def fit_parabola_1d(f_arr, x_arr):
         print(f"{e}")
     xcenter,  f_amp, f_offset = popt
     return xcenter, f_amp, f_offset
+
+def fit_linear(f_arr, x_arr):
+    initial_guess = [0.1, 300]
+    params, _ = scipy.optimize.curve_fit(_linear, x_arr, f_arr, p0=initial_guess)
+    (a, b) = params
+    return a, b

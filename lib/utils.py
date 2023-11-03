@@ -3,6 +3,7 @@
 # GPL-3 license
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 def wavelength_to_rgb(wavelength):
     """A crude mapping of nm to RGB space for plotting purposes"""

@@ -113,4 +113,5 @@ dmypy.json
 .pyre/
 
 # local folders
-local_analysis
+local_analysis/
+local_analysis_ZMB/
